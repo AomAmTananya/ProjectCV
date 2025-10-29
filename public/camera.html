@@ -69,18 +69,18 @@
     const infoCard = document.querySelector('.info-card');
 
     btn.addEventListener('click', () => {
-      // 1️⃣ ซ่อน info-card
+      //ซ่อน info-card
       infoCard.classList.add('hidden');
 
-      // 2️⃣ ซ่อนปุ่ม Start Camera
+      //ซ่อนปุ่ม Start Camera
       btn.style.display = "none";
 
-      // 3️⃣ แสดง loader
+      //แสดง loader
       loader.classList.add('active');
       iconsDiv.style.display = 'block'; 
       iconImg.style.display = 'block';
 
-      // 4️⃣ โหลด stream จาก Flask
+      // โหลด stream จาก Flask
       img.onload = () => {
         loader.classList.remove('active'); // ซ่อน loader
         img.classList.add('active');       // แสดง image
