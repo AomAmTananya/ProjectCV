@@ -223,18 +223,36 @@ h1 {
   margin: 30px auto;
 }
 
+.result-heatmap-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;  /* กรอบจะอยู่ตรงกลาง */
+  align-items: stretch; /* ทำให้กล่องสูงเท่ากัน */
+  gap: 80px;               /* ระยะห่างระหว่าง result-box และ heatmap-box */
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+/* Result box และ Heatmap box */
 .result-box, .heatmap-box {
-  flex: 0 1 400px;
+  flex: 0 1 400px;          /* ขนาดพื้นฐาน */
   min-width: 280px;
   max-width: 480px;
-  background-color: var(--card-bg);
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 30px;
-  border-radius: var(--border-radius);
+  border-radius: 16px;
   border: 1px solid rgba(0,0,0,0.08);
-  box-shadow: var(--shadow-light);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   backdrop-filter: blur(8px);
   margin-bottom: 40px;
   transition: all 0.3s ease;
+
+  display: flex;             /* ทำให้ content ภายในกล่องเป็น flex */
+  flex-direction: column;    /* วาง item ในแนวตั้ง */
+  justify-content: center;   /* จัด content แนวตั้งให้อยู่กลาง */
+  align-items: center;       /* จัด content แนวนอนให้อยู่กลาง */
+  text-align: center;        /* จัดข้อความให้อยู่กลาง */
 }
 
 .heatmap-box img {
@@ -260,7 +278,8 @@ h1 {
 }
 
 .bar {
-  width: 100%;
+  min-width: 280px;
+  max-width: 480px;
   height: 12px;
   border-radius: 6px;
   background: #eef3f6;
