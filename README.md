@@ -37,25 +37,3 @@ Camera general
 python predict.py
 ```
 
-## PROJECT STRUCTURE
-ProjectAiapp/
-│
-├─ models/
-│   └─ best_gimefive.pth       # PyTorch model
-│
-├─ static/
-│   └─ heatmaps/               # Stores generated heatmaps
-│
-├─ uploads/                    # Temporary uploaded images
-│
-├─ public/
-│   └─ css                     # Css
-│   └─ assets                  # Photo
-│   └─ html              
-│ 
-├─ predict_torch.py            # Python script for prediction Image
-├─ Gradcam.py                  # Python script for prediction + Grad-CAM
-├─ predict.py                  # Python script for prediction with general Cam
-├─ models.py                   # Models class
-├─ app.js                      # Node.js server
-└─ requirements.txt            # Python packages
