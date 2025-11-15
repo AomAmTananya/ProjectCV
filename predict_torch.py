@@ -11,9 +11,9 @@ from models import GiMeFive
 
 # ========== CONFIG ==========
 DEVICE = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
-MODEL_PATH = r"C:\Users\ADMIN\ProjectAiapp\models\best_GiMeFive.pth"
+MODEL_PATH = r"./models/best_GiMeFive.pth"
 EMOTIONS = ['happiness', 'surprise', 'sadness', 'anger', 'disgust', 'fear']
-OUTPUT_DIR = r"C:\Users\ADMIN\ProjectAiapp\static\heatmaps"
+OUTPUT_DIR = r"./static/heatmaps"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 # ============================
 
