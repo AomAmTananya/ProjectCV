@@ -1,4 +1,6 @@
 ## Setup
+- New Folder static\heatmaps
+
 
 - PYTHON ENVIRONMENT
 ```
@@ -11,7 +13,6 @@ source .venv/bin/activate     # MAC/LINUX
 
 # ติดตั้ง pip packages
 pip install -r requirements.txt
-python3 -m pip install -r requirements.txt
 ```
 - Node.js packages
 ```
