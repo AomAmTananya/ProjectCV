@@ -1,20 +1,17 @@
-## Requirements
-A detailed list of requirements can be found in requirements.txt. 
-```
-pip install -r requirements.txt
-python3 -m pip install -r requirements.txt
-```
 ## Setup
 
 - PYTHON ENVIRONMENT
 ```
 # สร้าง virtual environment
 python -m venv .venv
+
 # เปิดใช้งาน
 .\.venv\Scripts\activate      # WINDOWS
 source .venv/bin/activate     # MAC/LINUX
+
 # ติดตั้ง pip packages
 pip install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 - Node.js packages
 ```
